@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Syazwan Section B </title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Fontdiner+Swanky&family=Permanent+Marker&display=swap" rel="stylesheet">
+<style>
+a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.previous {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+.next {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.round {
+  border-radius: 50%;
+}
+body, html{
+	background-color : #15223B;
+	height: 100%;
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	line-height: ;
+}
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("heroimage2.jpg");
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-family: MYPUMAFont;
+}
+h1{color: white;
+font-family: 'Permanent Marker', cursive;
+text-transform: uppercase;}
+p{color: white;}
+
+@font-face {
+  font-family: aAutobusOmnibusFont;
+  src: url(aAutobusOmnibus.otf);
+}
+.1o{
+font-family: aAutobusOmnibusFont;
+font-size: 300%;
+}
+@font-face {
+  font-family: AristaFont;
+  src: url(Arista.ttf);
+}
+.2o{
+font-family: AristaFont;
+font-size: 300%;
+}
+@font-face {
+  font-family: gameoverFont;
+  src: url(gameover.ttf);
+}
+.3o{
+font-family: gameoverFont;
+font-size: 300%;
+}
+@font-face {
+  font-family: MYPUMAFont;
+  src: url(MYPUMA.ttf);
+}
+.4o{
+font-family: MYPUMAFont;
+font-size: 300%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.nav {
+  font-weight : 200;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+  position: relative;
+  background-color: #00fff;
+  text-align: center;
+  padding: 0 2em;
+}
+ a{
+  text-decoration: none;
+  font-family: bree serif, sans-serif;
+  
+ }
+.nav h2 a{
+ 
+  font-size: 2vw;
+  margin: 0;
+  padding-bottom: 0.5rem;
+  letter-spacing: 0.5rem;
+  color: #00fff;
+  transition: all 0.3s ease;
+  z-index: 3;
+  padding-top: 30px;
+  letter-spacing: 10px;
+}
+h2:hover {
+  transform: translate3d(0, -10px, 22px);
+  
+}
+h2 a:hover {
+  color: #ff0a6c;
+}
+
+h1.span {
+  font-size: 5vw;
+  font-weight: 300;
+  color: #ffe53b;
+  ;
+  z-index: 4;
+}
+
+
+.background {
+  position: absolute;
+  height: 90vh;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: auto;
+}
+
+
+
+
+.loader span {
+  color: #ff2cdf;
+  text-shadow: 0 0 0 #0014ff;
+ -webkit-animation: loading 1.5s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes loading {
+  to {
+    text-shadow: 20px 0 70px #ff0a6c;
+    color: #f7007a;
+  }
+}
+.loader span:nth-child(2) {
+  -webkit-animation-delay: 0.1s;
+}
+.loader span:nth-child(3) {
+  -webkit-animation-delay: 0.2s;
+}
+.loader span:nth-child(4) {
+  -webkit-animation-delay: 0.3s;
+}
+.loader span:nth-child(5) {
+  -webkit-animation-delay: 0.4s;
+}
+.loader span:nth-child(6) {
+  -webkit-animation-delay: 0.5s;
+}
+.loader span:nth-child(7) {
+  -webkit-animation-delay: 0.6s;
+}
+.loader span:nth-child(8) {
+  -webkit-animation-delay: 0.7s;
+}
+.loader span:nth-child(9) {
+  -webkit-animation-delay: 0.8s;
+}
+.loader span:nth-child(10) {
+  -webkit-animation-delay: 0.9s;
+}
+.loader span:nth-child(11) {
+  -webkit-animation-delay: 1s;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+
+.syazwan{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+}
+p1 {
+  position: relative;
+  display: inline-block;
+  padding: 25px 30px;
+  margin: 40px 0;
+  color: #03e9f4;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.5s;
+  letter-spacing: 4px;
+  overflow: hidden;
+  margin-right: 50px;
+}
+p1:hover {
+  background: #03e9f4;
+  color: #050801;
+  box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4,
+    0 0 200px #03e9f4;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+}
+p1:nth-child(1) {
+  filter: hue-rotate(270deg);
+}
+p1:nth-child(2) {
+  filter: hue-rotate(110deg);
+}
+p1 span {
+  position: absolute;
+  display: block;
+}
+p1 span:nth-child(1) {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #03e9f4);
+  animation: animate1 1s linear infinite;
+}
+@keyframes animate1 {
+  0% {
+    left: -100%;
+  }
+  50%,
+  100% {
+    left: 100%;
+  }
+}
+p1 span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #03e9f4);
+  animation: animate2 1s linear infinite;
+  animation-delay: 0.25s;
+}
+@keyframes animate2 {
+  0% {
+    top: -100%;
+  }
+  50%,
+  100% {
+    top: 100%;
+  }
+}
+p1 span:nth-child(3) {
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #03e9f4);
+  animation: animate3 1s linear infinite;
+  animation-delay: 0.5s;
+}
+@keyframes animate3 {
+  0% {
+    right: -100%;
+  }
+  50%,
+  100% {
+    right: 100%;
+  }
+}
+
+p1 span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #03e9f4);
+  animation: animate4 1s linear infinite;
+  animation-delay: 0.75s;
+}
+@keyframes animate4 {
+  0% {
+    bottom: -100%;
+  }
+  50%,
+  100% {
+    bottom: 100%;
+  }
+}
+
+.justify {
+  text-align: justify; /* For Edge */
+  -moz-text-align-last: justify; /* For Firefox prior 58.0 */
+  text-align-last: justify;
+}
+
+</style>
+</head>
+<body>
+<div class="hero-image">
+  <div class="hero-text">
+    <h1 class="4o" style="font-size:50px">Section B</h1>
+  </div>
+</div>
+<center>
+<div class="nav">
+  <h1 class="span loader">
+    <span class="m">V</span>
+    <span class="m">i</span>
+    <span class="m">r</span>
+    <span class="m">t</span>
+    <span class="m">u</span>
+    <span class="m">a</span>
+    <span class="m">l</span>
+    <span class="m">-</span>
+    <span class="m">r</span>
+    <span class="m">e</span>
+    <span class="m">a</span>
+    <span class="m">l</span>
+    <span class="m">i</span>
+    <span class="m">t</span>
+    <span class="m">y</span>
+    <h2>
+      <a href="https://en.wikipedia.org/wiki/Virtual_reality" target="_blank" 
+	  style="background-color: transparent">welcome</a>
+    <h2>
+  </h1>
+ </div>
+<div class="syazwan">
+<center>
+<p1>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  What Is Virtual Reality?
+</p1>
+<p1>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  The three main VR categories
+</p1>
+<p1>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  How Does Virtual Reality<br>Technology Work?</br>
+</p1>
+</center>
+</div>
+<br><br></br>
+<center>
+<table style="width:50%; border:3px transpaernt">
+<tr>
+<td>
+	<img src="vr1.jpg" width="280" height="260" >
+</td>
+<td>
+<p class="justify" style="margin-left:50px; padding 35px; color:#7FFF00;">
+   Virtual reality is the use of computer technology to create simulated
+   environments. Virtual reality places the user inside a three-dimensional
+   experience. Instead of viewing a screen in front of them, users are
+   immersed in and interact with 3D worlds.
+   Simulation of human senses—all five of them—transforms a computer into a
+   vehicle into new worlds. The only limitation to a superb VR experience is
+   computing power and content availability.
+   </p>
+ </td>
+ </tr>
+ </table>
+<br></br>
+<table style="width:72%; border:3px transpaernt">
+<tr>
+<td>
+<p><div class="justify" style="margin-right:50px; padding 35px; color:#D050D0;">
+   <b style="text-decoration: underline;">Non-Immersive Virtual Reality:</b> This category is often overlooked as VR simply because it’s so common. 
+      Non-immersive VR technology features a computer-generated virtual environment where the user 
+      simultaneously remains aware and controlled by their physical environment. Video games are a prime 
+      </div><p style="color:#D050D0;">example of non-immersive VR.</p>
+	<br></br><div class="justify" style="margin-right:50px; padding 35px;color:#D050D0;">
+   <b style="text-decoration: underline;">Semi-Immersive Virtual Reality:</b> This type of VR provides an experience partially based in a virtual 
+   environment. This type of VR makes sense for educational and training purposes with graphical computing 
+   </div><p style="color:#D050D0;">and large projector systems, such as flight simulators for pilot trainees.</p>
+   <br></br><div class="justify" style="margin-right:50px; padding 35px;color:#D050D0;">
+   <b style="text-decoration: underline;">Non-Immersive Virtual Reality:</b>  Right now, there are no completely immersive VR technologies, 
+   but advances are so swift that they may be right around the corner. This type of VR generates the most 
+   realistic simulation experience, from sight to sound to sometimes even olfactory sensations. 
+   Car racing games are an example of immersive virtual reality that gives the user the sensation of speed 
+   and driving skills. Developed for gaming and other entertainment purposes, VR use in other sectors is increasing.
+   <br></br>
+	The virtual technology definition includes specific shared characteristics. Not only immersive, they are also 
+	</div><p style="color:#D050D0;">computer-generated, believable as multidimensional experiences, and interactive.</p>
+</p>
+</td>
+<td>
+	<img src="vr2.jpg" width="280" height="260"">
+</td>
+</tr>
+</table>
+<br><br></br>
+<table style="width:72%; border:3px transpaernt">
+<tr>
+<td>
+	<img src="vr3.jpg" width="280" height="260" >
+</td>
+<td>
+<p class="justify" style="margin-left:50px; padding 35px;color:#03e9f4;">
+   The VR process combines hardware and software to create immersive experiences that “fool” the eye and brain. Hardware supports sensory 
+   stimulation and simulation such as sounds, touch, smell or heat intensity, while software creates the rendered virtual environment.
+   </p>
+<p style="margin-left:50px; padding 35px;color:#03e9f4;">
+   <br></br><b>Eye and Brain Function and the 3D VR Experience</b><br></br>
+   </p>
+<p class="justify" style="margin-left:50px; padding 35px; color:#03e9f4;">
+   Immersive experience creation mimics how the eye and brain form visuals. Human eyes are about three inches apart and therefore form 
+   two slightly different views. The brain fuses those views to create a sense of depth or stereoscopic display.
+   VR applications replicate that phenomenon with a pair of exact images from two different perspectives. 
+   Instead of a single image covering the entire screen, it shows two identical pictures made to offset the view for each eye. VR technology 
+   fools the viewer’s brain into perceiving a sense of depth and accept the illusion of a multi-dimensional image.
+</p>
+ </td>
+ </tr>
+ </table>
+</center>
+<br><br><br><br><br><br></br>
+<center>
+<p style="font-family: AristaFont; font-size:40px;"> There are few videos about VR.</p><br></br></center>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/YLb1gnmsceA" 
+title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/hNAbQYU0wpg" 
+title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+gyroscope; picture-in-picture" allowfullscreen></iframe>
+<br></br>
+<center>
+<table style="width:69%; border:3px transpaernt">
+<tr>
+<td>
+<center><p><b>What is VR?</b><br></br></p></center></td>
+<td><center><p><b>Experience of VR</b><br></br></p></center></td>
+</tr></table>
+<br><br></br>
+<p style="font-family:aAutobusOmnibusFont; font-size:40px;"> VR site.</p><br></br>
+<iframe src="https://www.onevrmalaysia.com/?gclid=CjwKCAiAzKqdBhAnEiwAePEjkhMF6t0giBylrv0jXrw3he3oUQMNqXX3wX0CRNLKZWz9k7u8-TaoHxoCMmEQAvD_BwE" 
+height="500" width="1000" title="Iframe Example"></iframe><br></br>
+<iframe src="https://arvr.google.com/earth/" height="515" width="560" title="Iframe Example" style="margin-right:20px;"></iframe>
+<iframe src="https://www.ediiie.com/blog/category/virtual-reality/" height="515" width="560" title="Iframe Example"></iframe>
+<br></br><br></br><br></br>
+<p style="font-family:aAutobusOmnibusFont; font-size:40px;"> VR recent trends.</p><br></br>
+<iframe src="https://program-ace.com/blog/virtual-reality-trends-of-2022/" height="515" width="560" title="Iframe Example" style="margin-right:20px;"></iframe>
+<iframe src="virtual-reality-trends-1024x1024.png" height="515" width="560" title="Iframe Example"></iframe>
+<br><br><br></br>
+<a href="HTMLSyazwan.html" class="previous">&laquo; Section A</a>
+<a href="HTMLSyazwan.html" class="previous round">&#8249;</a>
+<br><br></br>
+</center>
+</body>
+</html>

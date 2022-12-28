@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login index to syazwan webpage</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+background-image: url("16_32  _ waneella on Patreon.gif");
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: 100% 100%;
+}
+.loginbox{
+	width: 320px;
+	height: 420px;
+	background: rgb(0, 0, 0, 0.7);
+	color: #fff;
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%,-50%);
+	box-sizing: border-box;
+	padding: 70px 30px;
+}
+.avatar{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	position: absolute;
+	top: -15%;
+	left: calc(50% - 50px);
+	
+}
+h2{
+	margin: 0;
+	padding: 0 0 20px;
+	text-align : center;
+	font-size: 22px;
+}
+.loginbox p{
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+}
+.loginbox input{
+	width: 100%;
+	margin-bottom: 20px;
+}
+.loginbox input[type="text"], input[type="password"]
+{
+	border: none;
+	border-bottom: 1px solid#fff;
+	background: transparent;
+	outline: none;
+	height: 40px;
+	color: #fff;
+	font-size: 16px;
+}
+.button
+{
+	width: 70%;
+	border: none;
+	outline: none;
+	height: 40px;
+	background: #fb2525;
+	color: #fff;
+	font-size: 15px;
+	border-radius: 16px;
+}
+.button:hover
+{
+	cursor: pointer;
+	background : #ffc107;
+	color: #000;
+}
+@font-face 
+{
+  font-family: JandaManateeSolid;
+  src: url("JandaManateeSolid.ttf");
+}
+div
+{
+ font-family: JandaManateeSolid;
+ font-kerning: none;
+}
+
+</style>
+</head>
+<body>
+	<div class="loginbox">
+		<img src="Avatar-Profile-PNG-Picture.png" class="avatar">	
+		<h2 style= "color:#F5B041;">LOGIN HERE</h2>
+		<form>
+			<label for="userform" style= "color:#F5B041;">Username</label>
+			<input type="text" id="userform" placeholder="Enter Username">
+			<label for="passwordform" style= "color:#F5B041;">Password</label>
+			<input type="text" id="passwordform" placeholder="Enter Password">
+		</form>
+<center><button class="button" onclick="HomepageLOGIN()"  >Click Submit</button></center>
+
+<script>
+	function HomepageLOGIN() {
+	var text = document.getElementById("userform").value;
+	var password = document.getElementById("passwordform").value;
+	if(text == "abc" && password == "123" )
+	{
+		window.location.assign("Homepage.html");
+		alert("Login Successfully ");
+	}
+	else{
+		alert("Invalid Information ");
+		return;
+	}
+	}
+</script>
+</div>
+
+</body>
+</html>
